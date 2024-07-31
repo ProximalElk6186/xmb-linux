@@ -7,7 +7,7 @@ For Linux kernel code, please see https://github.com/torvalds/linux
 Feel free to contribute to this repository by Forking it, making the changes and then making a Pull Request.
 
 ## Project goals:
-- Recreate the XMB™ interface using HTML + CSS + JavaScript
+- Recreate the SONY PLAYSTATION 3's XMB™ interface using HTML + CSS + JavaScript
 
 - Modify a web browser to display the XMB™ interface as a full-screen no-window-controls (no Close, Minimize buttons as well as no Title bar) window
 
