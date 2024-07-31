@@ -17,6 +17,8 @@ Feel free to contribute to this repository by Forking it, making the changes and
 
 ✔️ Develop GamePad input support
 
+✔️ Add a decent TouchScreen suport
+
 ## Copyright warning
 
 XMB™ (Xross Media Bar) is a Graphical User interface developed by Sony Group Corporation.
