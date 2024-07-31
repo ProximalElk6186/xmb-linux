@@ -7,17 +7,17 @@ For Linux kernel code, please see https://github.com/torvalds/linux
 Feel free to contribute to this repository by Forking it, making the changes and then making a Pull Request.
 
 ## Project goals:
-✔️ Recreate the XMB™ interface using HTML + CSS + JavaScript
+[] Recreate the XMB™ interface using HTML + CSS + JavaScript
 
-✔️ Modify a web browser to display the XMB™ interface as a full-screen no-window-controls (no Close, Minimize buttons as well as no Title bar) window
+[] Modify a web browser to display the XMB™ interface as a full-screen no-window-controls (no Close, Minimize buttons as well as no Title bar) window
 
-✔️ Make it actually work
+[] Make it actually work
 
-✔️ Add out-of-the-box KDE Connect app support
+[] Add out-of-the-box KDE Connect app support
 
-✔️ Develop GamePad input support
+[] Develop GamePad input support
 
-✔️ Add a decent TouchScreen suport
+[] Add a decent TouchScreen suport
 
 ## Copyright warning
 
