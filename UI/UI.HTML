@@ -5,23 +5,42 @@
         XMB™ Linux Graphical User Interface
       </title>
     <style>
-    #leftalgn
-    {
+    #leftalgn{
       text-align:  left;
     }
-    #rightalign
-    {
+    #rightalign{
       text-align:  right;
     }
-    #centeralign
-    {
-      text-align: center;
+    #centeralign{
+      text-align:  center;
+    }
+    #datetime{
+      text-align:  right;
     }
     </style>
     </head>
     <body>
-      <div id="leftalign" class="leftalign">
-        <p>Date & Time should be here, but I am too lazy to implement them.</p>
+      <div id="rightalign" class="rightalign">
+        <p id="datetime" class="datetime">Date & Time should be here, but I am too lazy to implement them.</p>
       </div>
+      <script>
+        function checkTime(i) {
+            if (i < 10) { i = "0" + i; } // Adding "0" before one-signed numbers
+            return i;
+        }
+
+        function startTime() {
+            const today = new Date();
+            let h = today.getHours();
+            let m = today.getMinutes();
+            let s = today.getSeconds();
+            m = checkTime(m);
+            s = checkTime(s);
+            document.getElementById('datetime').innerHTML = h + ":" + m;
+            setTimeout(startTime, 1000); // Update every second even though we only have hours and minutes
+        }
+
+        startTime(); // Call the function as the webpage loads
+      </script>
     </body>
   </main>
