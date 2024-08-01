@@ -5,6 +5,10 @@
         XMB™ Linux Graphical User Interface
       </title>
     <style>
+    @font-face {
+      font-family: 'VR-R-Latin';
+      src: url('./Fonts/SCE-PS3-VR-R-LATIN.TTF') format('truetype');
+    }
     #leftalgn{
       text-align:  left;
     }
@@ -16,12 +20,13 @@
     }
     #datetime{
       text-align:  right;
+      font-family: 'VR-R-Latin'
     }
     </style>
     </head>
     <body>
       <div id="rightalign" class="rightalign">
-        <p id="datetime" class="datetime">Date & Time should be here, but I am too lazy to implement them.</p>
+        <p id="datetime"></p>
       </div>
       <script>
         function checkTime(i) {
