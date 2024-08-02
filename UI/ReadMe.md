@@ -1,4 +1,4 @@
-# Scaling support
+# About the UI:
 Scaling support for the UI will be added later.
 
 
