@@ -12,9 +12,15 @@
     #leftalgn{
       text-align:  left;
     }
-    #rightalign{
-      text-align:  right;
+    #rightalign {
+      display: flex;
+      justify-content: flex-end; /* Выровнять содержимое по правому краю */
     }
+
+    #datetime, #clock {
+      margin: 0 5px; /* Добавить промежуток между элементами, если нужно */
+    }
+
     #centeralign{
       text-align:  center;
     }
@@ -27,6 +33,7 @@
     <body>
       <div id="rightalign" class="rightalign">
         <p id="datetime"></p>
+        <p id="clock">A little guy called 'a clock icon' will be displayed here.</p>
       </div>
       <script>
         function checkTime(i) {
