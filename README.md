@@ -1,4 +1,4 @@
-> Hey, we definately need more people to know about this project!
+> Hey, we definitely need more people to know about this project!
 # XMB™ Linux
 Linux OS with XMB™ interface.
 
