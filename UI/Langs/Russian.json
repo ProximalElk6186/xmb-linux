@@ -1,0 +1,18 @@
+{
+  "languageName":  "Russian"
+  "languageNameLocalized":  "Русский"
+  "UIText":  {
+    "welcome":  "Добро пожаловать!"
+    "disclaimer":  "Нормальный дисКЛЕЙмер добавим позже в разработке."
+    "time":  "Время"
+    "date":  "Дата"
+    "settings":  "Настройки"
+    "media":  "Медиа"
+    "screenResolution":  "Разрешение экрана"
+    "interfaceScaling":  "Масштабирование интерфейса"
+    "timeDatePlaceHolderMonthDayYear":  "9/11/2001  8:46:26"
+    "fileCommentNumber1PleaseIgnoreInTheCodeItself":  "блин это вообще легально??????????????????????????????"
+    "timeDatePlaceHolderDayMonthYear":  "11.09.2001  8:46:26"
+    "timeDatePlaceHolderWithMonthWrittenUsingWordsAndNotNumbersAndActuallyComeUpWithAShorterNameForThis":  "11 сентября 2001 года, 8:46:26"
+  }
+}
