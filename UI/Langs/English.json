@@ -1,0 +1,16 @@
+{
+  "languageName":  "English"
+  "UIText":  {
+    "welcome":  "Welcome!"
+    "disclaimer":  "A proper disclaier will be added later in the development."
+    "time":  "Time"
+    "date":  "Date"
+    "settings":  "Settings"
+    "media":  "Media"
+    "screenResolution":  "Screen Resolution"
+    "interfaceScaling":  "Interface Scaling"
+    "timeDatePlaceHolderMonthDayYear":  "9/11/2001  8:46:26"
+    "fileCommentNumber1PleaseIgnoreInTheCodeItself":  "fuck is it even legal??????????????????????????????"
+    "timeDatePlaceHolderDayMonthYear":  "11.09.2001  8:46:26"
+  }
+}
