@@ -4,6 +4,7 @@ Linux Desktop Environment with XMB™ interface, powered by Electron.
 
 This GitHub repository only hosts the code for the UI.
 For Linux kernel code, please see https://github.com/torvalds/linux
+For Electron's code, please see https://github.com/electron/electron
 
 Feel free to contribute to this repository by Forking it, making the changes and then making a Pull Request.
 
