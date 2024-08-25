@@ -1,6 +1,6 @@
 > Hey, we definitely need more people to know about this project!
 # XMB™ Linux
-Linux OS with XMB™ interface.
+Linux Desktop Environment with XMB™ interface, powered by Electron.
 
 This GitHub repository only hosts the code for the UI.
 For Linux kernel code, please see https://github.com/torvalds/linux
@@ -9,16 +9,12 @@ Feel free to contribute to this repository by Forking it, making the changes and
 
 ## What is it?
 
-It is a **_WIP (Work-In-Progress)_ Linux distribution.** It will accurately recreate the Sony Playstation 3's XrossMediaBar™ (XMB™) interface developed by Sony Group Corporation.
+It is a **_WIP (Work-In-Progress)_ Linux Desktop Environment.** It will accurately recreate the Sony Playstation 3's XrossMediaBar™ (XMB™) interface developed by Sony Group Corporation.
 
 ## Project goals:
-- Recreate the SONY PLAYSTATION 3's XMB™ interface using HTML + CSS + JavaScript
-
-- Modify a web browser to display the XMB™ interface as a full-screen no-window-controls (no Close, Minimize buttons as well as no Title bar) window
+- Recreate the SONY PLAYSTATION 3's XMB™ interface using HTML + CSS + JavaScript while using Electron. 
 
 - Make it actually work
-
-- Add out-of-the-box KDE Connect app support
 
 - Develop GamePad input support
 
