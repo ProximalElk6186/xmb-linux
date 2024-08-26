@@ -42,3 +42,10 @@ The XMB™ Linux' developers are in no way affiliated with Linux.
 We did **NOT** develop Linux.
 
 **We are _NOT_ Linux!**
+
+
+## Credits & Authors
+
+
+### Programming
+            ProximalElk6186, 5d-code

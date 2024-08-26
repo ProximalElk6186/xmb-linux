@@ -4,6 +4,7 @@
       <title>
         XMB™ Linux Graphical User Interface
       </title>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.10.0/p5.min.js"></script>
     <style>
     @font-face {
       font-family: 'VR-R-Latin';
@@ -14,11 +15,11 @@
     }
     #rightalign {
       display: flex;
-      justify-content: flex-end; /* Выровнять содержимое по правому краю */
+      justify-content: flex-end; /* rightalign */
     }
 
     #datetime, #clock {
-      margin: 0 5px; /* Добавить промежуток между элементами, если нужно */
+      margin: 0 5px; /* add margin */
     }
 
     #centeralign{
@@ -53,6 +54,194 @@
         }
 
         startTime(); // Call the function as the webpage loads
+
+
+        // 5D-Code's perfectly working code
+
+
+
+        const XMB_X_START = 0.25;
+const XMB_Y_START = 0.25;
+const XMB_EASING = 0.2;
+const XMB_DEFAULT_FONT_COLOR = "white";
+const XMB_SELECTED_FONT_COLOR = "orange";
+const XMB_BACKGROUND_COLOR = "midnightblue";
+const XMB_DEFAULT_FONT_SIZE = 20;
+const XMB_SELECTED_CATEGORY_FONT_SIZE = 24;
+const XMB_UNSELECTED_CATEGORY_ICON_SIZE = 40;
+const XMB_SELECTED_CATEGORY_ICON_SIZE = XMB_UNSELECTED_CATEGORY_ICON_SIZE * 2;
+const XMB_X_OFFSET_BETWEEN_CATEGORIES = 200;
+const XMB_DRAW_LABLES_FOR_UNSELECTED_OPTIONS = true;
+
+let categoryIcon;
+let optionIcon;
+let menu;
+let time;
+
+class Category {
+  constructor(name, options) {
+    this.name = name;
+    this.options = options;
+    this.selectedOption = 0;
+    this.optionYPos = Array(options.length).fill(0);
+    this.targetOptionYPos = Array(options.length).fill(0);
+  }
+
+  draw(x, y, cameraOffset, isSelected) {
+    this.categoryHeight = this.drawCategoryIcon(x, y, isSelected, cameraOffset);
+    this.drawCategoryName(x, y, isSelected, cameraOffset);
+    if (isSelected) this.drawOptions(x, y, cameraOffset);
+  }
+
+  drawCategoryIcon(x, y, isSelected, cameraOffset) {
+    const iconSize = isSelected ? XMB_SELECTED_CATEGORY_ICON_SIZE : XMB_UNSELECTED_CATEGORY_ICON_SIZE;
+    imageMode(CENTER);
+    image(categoryIcon, x - cameraOffset, y, iconSize, iconSize);
+    return iconSize;
+  }
+
+  drawCategoryName(x, y, isSelected, cameraOffset) {
+    if (!isSelected) return;
+    fill(XMB_DEFAULT_FONT_COLOR);
+    textSize(XMB_SELECTED_CATEGORY_FONT_SIZE);
+    text(this.name, x - categoryIcon.width/2.1 - cameraOffset, y + categoryIcon.height / 2 + 30);
+    this.categoryHeight += categoryIcon.height / 2 + 30 + XMB_SELECTED_CATEGORY_FONT_SIZE;
+  }
+
+  drawOptions(x, y, cameraOffset) {
+    this.options.forEach((option, i) => {
+      this.optionYPos[i] += (this.targetOptionYPos[i] - this.optionYPos[i]) * XMB_EASING;
+      this.drawOption(x, y, cameraOffset, option, i);
+    });
+  }
+
+  drawOption(x, y, cameraOffset, option, index) {
+    const isSelected = index === this.selectedOption;
+    const optionIconSize = isSelected ? 60 : 30;
+    const optionYOffset = this.categoryHeight / 2;
+    const optionY = this.optionYPos[index];
+    
+    image(optionIcon, x - cameraOffset, y + 40 + optionYOffset + optionY, optionIconSize, optionIconSize);
+    fill(isSelected ? XMB_SELECTED_FONT_COLOR : XMB_DEFAULT_FONT_COLOR);
+    textSize(XMB_DEFAULT_FONT_SIZE);
+    if (XMB_DRAW_LABLES_FOR_UNSELECTED_OPTIONS || isSelected) text(option, x - cameraOffset + optionIconSize / 2 + 10, y + 40 + optionYOffset + optionY);
+  }
+
+  updateTargetPositions() {
+    this.options.forEach((_, i) => {
+      this.targetOptionYPos[i] = i < this.selectedOption ? (i - this.selectedOption) * 40 - this.categoryHeight :
+                            i === this.selectedOption ? 0 :
+                            (i - this.selectedOption) * 40;
+    });
+  }
+}
+
+class Menu {
+  constructor(categories) {
+    this.categories = categories.map(cat => new Category(cat.name, cat.options));
+    this.selectedCategory = 0;
+    this.camera = 0;
+    this.targetCamera = 0;
+  }
+
+  updateCamera() {
+    this.camera += (this.targetCamera - this.camera) * XMB_EASING;
+  }
+
+  draw() {
+    this.updateCamera();
+    const xStart = width * XMB_X_START;
+    const yStart = height * XMB_Y_START;
+    this.categories.forEach((category, index) => {
+      const x = xStart + index * XMB_X_OFFSET_BETWEEN_CATEGORIES;
+      category.draw(x, yStart, this.camera, index === this.selectedCategory);
+    });
+  }
+
+  selectNextCategory() {
+    if (this.selectedCategory < this.categories.length - 1) {
+      this.selectedCategory++;
+      this.targetCamera += XMB_X_OFFSET_BETWEEN_CATEGORIES;
+      this.updateTargetCamera();
+    }
+  }
+
+  selectPreviousCategory() {
+    if (this.selectedCategory > 0) {
+      this.selectedCategory--;
+      this.targetCamera -= XMB_X_OFFSET_BETWEEN_CATEGORIES;
+      this.updateTargetCamera();
+    }
+  }
+
+  selectNextOption() {
+    const currentCategory = this.categories[this.selectedCategory];
+    if (currentCategory.selectedOption < currentCategory.options.length - 1) {
+      currentCategory.selectedOption++;
+      currentCategory.updateTargetPositions();
+    }
+  }
+
+  selectPreviousOption() {
+    const currentCategory = this.categories[this.selectedCategory];
+    if (currentCategory.selectedOption > 0) {
+      currentCategory.selectedOption--;
+      currentCategory.updateTargetPositions();
+    }
+  }
+
+  updateTargetCamera() {
+    this.targetCamera = this.selectedCategory * 200 - 100;
+  }
+}
+
+function initPlaceholders() {
+  categoryIcon = createGraphics(80, 80);
+  categoryIcon.background(0);
+  categoryIcon.fill(255, 0, 0);
+  categoryIcon.ellipse(categoryIcon.width / 2, categoryIcon.height / 2, 60, 60);
+
+  optionIcon = createGraphics(60, 60);
+  optionIcon.background(0);
+  optionIcon.fill(0, 0, 255);
+  optionIcon.rect(optionIcon.width / 4, optionIcon.height / 4, optionIcon.width / 2, optionIcon.height / 2);
+}
+
+function setup() {
+  createCanvas(windowWidth, windowHeight);
+  textAlign(LEFT, CENTER);
+
+  initPlaceholders();
+  
+  const categories = [
+    { name: "Games", options: ["Game 1", "Game 2", "Game 3", "Game4", "game5", "game6", "game7", "game8", "game9", "game10000"] },
+    { name: "Music", options: ["skibidi toilet theme song", "a", "1234"] },
+    { name: "Settings", options: ["no settings for u"] },
+    { name: "Photos", options: ["", "Photo 2", "Photo 3"] },
+    { name: "Videos", options: ["fksdjfshdf", "video2", "video"] },
+    { name: "Apps", options: ["App 1", "App 2", "App 3"] },
+    { name: "Favoritesssssssssssss", options: ["Favorite 1", "Favorite 2", "Favorite 3"] }
+  ];
+
+  menu = new Menu(categories);
+  menu.categories.forEach(category => category.updateTargetPositions());
+}
+
+function draw() {
+  background(XMB_BACKGROUND_COLOR);
+  menu.draw();
+}
+
+function keyPressed() {
+  if (keyCode === RIGHT_ARROW) menu.selectNextCategory();
+  else if (keyCode === LEFT_ARROW) menu.selectPreviousCategory();
+  else if (keyCode === DOWN_ARROW) menu.selectNextOption();
+  else if (keyCode === UP_ARROW) menu.selectPreviousOption();
+}
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+}
+
       </script>
     </body>
   </main>
