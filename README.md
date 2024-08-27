@@ -8,7 +8,9 @@ For Linux kernel code, please see https://github.com/torvalds/linux
 
 Feel free to contribute to this repository by Forking it, making the changes and then making a Pull Request.
 
-![XMBLinuxCurrentProgressDemo](https://github.com/user-attachments/assets/2876c867-cfa6-432d-ac44-7be78eb01820)
+![ezgif-4-15eb5c0b07](https://github.com/user-attachments/assets/724913ae-1e39-4ab8-a102-a0391f1a290c)
+
+
 Current progress demo
 
 
