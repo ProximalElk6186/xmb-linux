@@ -1,0 +1,40 @@
+{
+	"easing": 0.2,
+	"origin": {
+		"x": 0.15,
+		"y": 0.15
+	},
+	"backgroundColor": 50,
+	"defaultFontColor": 255,
+	"selectedFontColor": "orange",
+	"defaultFontSize": 20,
+	"menu": {
+		"root": {
+			"selectedFontSize": 24,
+			"selectedIconSize": 80,
+			"unselectedIconSize": 40,
+			"xOffsetBetweenCategories": 200
+		},
+		"items": {
+			"selectedIconSize": 60,
+			"unselectedIconSize": 30,
+			"drawLabelsForUnselected": true
+		}
+	},
+	"clock": {
+		"backgroundColor": 20,
+		"stroke": {
+			"color": 255,
+			"weight": 1
+		},
+		"rect": {
+			"width": 250,
+			"height": 40,
+			"y": 0.05
+		},
+		"text": {
+			"fontSize": 20,
+			"xOffset": 10
+		}
+	}
+}
