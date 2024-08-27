@@ -17,3 +17,5 @@ Although snd_cancel SOUNDS similar, it's NOT byte-identical with snd_cathegory_d
  snd_option.
 
 It is actually a bit quieter and lower-pitched.
+
+snd_error is blank.
