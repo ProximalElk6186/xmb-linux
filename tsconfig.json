@@ -1,0 +1,33 @@
+{
+	"compilerOptions": {
+		"module": "none",
+		"noImplicitAny": true,
+		"outFile": "./www/index.js",
+		"preserveConstEnums": true,
+		"removeComments": true,
+		"rootDir": "./src/",
+		"sourceMap": true,
+		"target": "es5",
+		"moduleResolution": "node",
+		"strict": true
+	}
+}
+
+// {
+// 	"compilerOptions": {
+// 		"module": "amd",               // Change module to "amd"
+// 		"moduleResolution": "node",    // Adjust module resolution to "node"
+// 		"target": "ES2020",
+// 		"sourceMap": false,
+// 		"outFile": "www/index.js",     // Output combined JS file in www directory
+// 		"rootDir": "src",              // Root directory for TypeScript files
+// 		"strict": true,                // Enable strict type-checking options
+// 		"esModuleInterop": true,        // Enable compatibility with CommonJS and AMD modules
+// 		"skipLibCheck": true,
+// 		"removeComments": true
+// 	},
+// 	"include": ["src/**/*"],          // Include all .ts files in the src directory
+// 	"types": ["p5"]
+// }
+
+// // i dont know what the fuck a amd module is but thanks chat gpt
