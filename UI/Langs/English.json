@@ -2,17 +2,21 @@
   "languageName":  "English"
   "languageNameLocalized":  "English"
   "UIText":  {
-    "welcome":  "Welcome!"
-    "disclaimer":  "A proper disclaier will be added later in the development."
-    "time":  "Time"
-    "date":  "Date"
-    "settings":  "Settings"
-    "media":  "Media"
-    "screenResolution":  "Screen Resolution"
-    "interfaceScaling":  "Interface Scaling"
-    "timeDatePlaceHolderMonthDayYear":  "9/11/2001  8:46:26"
-    "fileCommentNumber1PleaseIgnoreInTheCodeItself":  "fuck is it even legal??????????????????????????????"
-    "timeDatePlaceHolderDayMonthYear":  "11.09.2001  8:46:26"
-    "timeDatePlaceHolderWithMonthWrittenUsingWordsAndNotNumbersAndActuallyComeUpWithAShorterNameForThis":  "The 11th of september, 2001, 8:46:26"
+    "welcome":  "Welcome!",
+    "disclaimer":  "A proper disclaier will be added later in the development.",
+    "time":  "Time",
+    "date":  "Date",
+    "settings":  "Settings",
+    "media":  "Media",
+    "screenResolution":  "Screen Resolution",
+    "interfaceScaling":  "Interface Scaling",
+    "timeDatePlaceHolderMonthDayYear":  "9/11/2001  8:46:26",
+    "fileCommentNumber1PleaseIgnoreInTheCodeItself":  "fuck is it even legal??????????????????????????????",
+    "timeDatePlaceHolderDayMonthYear":  "11.09.2001  8:46:26",
+    "timeDatePlaceHolderWithMonthWrittenUsingWordsAndNotNumbersAndActuallyComeUpWithAShorterNameForThis":  "The 11th of September, 2001, 8:46:26",
+    "users":  "Users",
+    "shutdown":  "Turn Off System",
+    "update":  "System Update",
+    "gameSettings":  "Game Settings"
   }
 }
