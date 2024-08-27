@@ -8,6 +8,11 @@ For Linux kernel code, please see https://github.com/torvalds/linux
 
 Feel free to contribute to this repository by Forking it, making the changes and then making a Pull Request.
 
+![XMBLinuxCurrentProgressDemo](https://github.com/user-attachments/assets/2876c867-cfa6-432d-ac44-7be78eb01820)
+Current progress demo
+
+
+
 ## What is it?
 
 It is a **_WIP (Work-In-Progress)_ Linux Desktop Environment.** It will accurately recreate the Sony Playstation 3's XrossMediaBar™ (XMB™) interface developed by Sony Group Corporation.
