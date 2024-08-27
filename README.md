@@ -1,10 +1,10 @@
 > Hey, we definitely need more people to know about this project!
 # XMB™ Linux
-Linux Desktop Environment with XMB™ interface, powered by Electron.
+Linux Desktop Environment with XMB™ interface.
 
 This GitHub repository only hosts the code for the UI.
 For Linux kernel code, please see https://github.com/torvalds/linux
-For Electron's code, please see https://github.com/electron/electron
+
 
 Feel free to contribute to this repository by Forking it, making the changes and then making a Pull Request.
 
@@ -48,4 +48,4 @@ We did **NOT** develop Linux.
 
 
 ### Programming
-            ProximalElk6186, 5d-code
+#### ProximalElk6186, 5d-code
