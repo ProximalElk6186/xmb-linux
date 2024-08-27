@@ -4,7 +4,7 @@
 
 **Recreation of the XMB™ interface in [JavaScript](https://en.wikipedia.org/wiki/JavaScript), [TypeScript](https://en.wikipedia.org/wiki/TypeScript), and [p5.js](https://p5js.org/).**
 
-![XMB Demo](https://github.com/user-attachments/assets/724913ae-1e39-4ab8-a102-a0391f1a290c)
+![XMB Demo](https://github.com/ProximalElk6186/xmb-linux/blob/main/demo.gif?raw=true)
 
 ## What is it?
 
