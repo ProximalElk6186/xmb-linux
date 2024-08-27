@@ -17,12 +17,50 @@
 - **Implement GamePad input support.** (0%)
 - **Develop decent touchscreen support.** (0%)
 
+## Getting Started
+
+Follow these instructions to set up and run the XMB™ Linux Media Center on your local machine:
+
+1. **Clone the Repository**
+
+   Open a terminal and run the following command to clone the repository:
+
+   ```bash
+   git clone https://github.com/ProximalElk6186/xmb-linux/
+   ```
+
+2. **Navigate to the Project Directory**
+
+   Change into the project directory:
+
+   ```bash
+   cd xmb-linux
+   ```
+
+3. **Install npm Packages**
+
+   Make sure you have [Node.js](https://nodejs.org/) and [npm](https://www.npmjs.com/) installed. Then, install the necessary npm packages:
+
+   ```bash
+   npm install
+   ```
+
+4. **Build and Run the Project**
+
+   Make sure you have [Python 3](https://www.python.org/) installed. Then execute the following command to build and run the project
+
+   ```bash
+   ./build.py run
+   ```
+
+5. **Open the Application**
+
+   Once the build process completes, you can open the application in your web browser: `http://localhost:8069`
+
 ## Features
 
 - **Media Playback**: Support for various media formats including video, audio, and images.
 - **File Management**: Easy navigation and management of media files.
-- **Streaming**: Integration with popular streaming services.
-- **Customizable Interface**: Personalize the XMB™ layout and theme to suit your preferences.
 
 ## Copyright Warning
 
@@ -45,3 +83,4 @@ The XMB™ Linux Media Center developers are not affiliated with Linux. We did *
 - 5d-code
 
 ---
+
