@@ -50,7 +50,7 @@ Follow these instructions to set up and run the XMB™ Linux Media Center on you
    Make sure you have [Python 3](https://www.python.org/) installed. Then execute the following command to build and run the project
 
    ```bash
-   ./build.py run
+   python3 ./build.py run
    ```
 
 5. **Open the Application**
