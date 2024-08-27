@@ -12,7 +12,7 @@ const root = new XMBRoot();
 
 ## Step 2: Create the Categories
 
-Now, let's create the four main categories: **Games**, **Pictures**, **Videos**, and **Music**. We'll use placeholder images for the icons.
+Now, let's create the four main categories: **Games**, **Pictures**, **Videos**, and **Music**.
 
 ```typescript
 const gamesCategory = new XMBCategory({
@@ -38,7 +38,7 @@ const musicCategory = new XMBCategory({
 
 ## Step 3: Add Items to the Categories
 
-Next, add some example items to each category. We'll create simple actions like "Game 1", "Picture 1", etc., with placeholder images.
+Next, add some example items to each category. We'll create simple actions like "Game 1", "Picture 1", etc.
 
 ### Adding Items to the Games Category
 
