@@ -18,7 +18,11 @@
 		"items": {
 			"selectedIconSize": 60,
 			"unselectedIconSize": 30,
-			"drawLabelsForUnselected": true
+			"drawLabelsForUnselected": true,
+			"description": {
+				"fontSize": 16,
+				"color": 128
+			}
 		}
 	},
 	"clock": {
