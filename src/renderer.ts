@@ -33,7 +33,11 @@ type XMBTheme = {
 		items: {
 			selectedIconSize: number,
 			unselectedIconSize: number,
-			drawLabelsForUnselected: boolean
+			drawLabelsForUnselected: boolean,
+			description: {
+				fontSize: number,
+				color: number
+			}
 		}
 	},
 
@@ -118,6 +122,17 @@ class RenderXMBCategory {
 
 		if (this.theme.menu.items.drawLabelsForUnselected || isSelected)
 			text(child.title, textX, textY);
+
+		if (!isSelected) return;
+
+		const description = child.description;
+		if (description.length == 0) return;
+
+		const descY = textY + this.theme.defaultFontSize + 2;
+
+		fill(this.theme.menu.items.description.color);
+		textSize(this.theme.menu.items.description.fontSize);
+		text(description, textX, descY)
 	}
 
 	public updateTargetPositions(): void { // only my previous self and god knows what this code does

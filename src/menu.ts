@@ -10,7 +10,8 @@ type XMBActionConstructorArgs = {
 
 type XMBMenuConstructorArgs = {
 	title: string,
-	icon: XMBIcon
+	icon: XMBIcon,
+	description?: string
 }
 
 abstract class XMBItem {
@@ -18,62 +19,45 @@ abstract class XMBItem {
 	public _targetY: number = 0;
 
 	public abstract get title(): string;
+	public abstract get description(): string;
 	public abstract get icon(): XMBIcon;
 	public abstract onPress(): void;
 }
 
 class XMBAction extends XMBItem {
-	private readonly _title: string;
-	private readonly _icon: XMBIcon;
-	private readonly _onPress: XMBOnPressCallback;
+	public readonly title: string;
+	public readonly icon: XMBIcon;
+	public readonly onPress: XMBOnPressCallback;
 
 	public readonly description: string;
 
 	public constructor(args: XMBActionConstructorArgs) {
 		super();
 
-		this._title = args.title;
-		this._icon = args.icon;
+		this.title = args.title;
+		this.icon = args.icon;
 		this.description = args.description ?? '';
-		this._onPress = args.onPress ?? (() => null); 
-	}
-
-	public get title(): string {
-		return this._title;
-	}
-
-	public get icon(): XMBIcon {
-		return this._icon;
-	}
-
-	public onPress(): void {
-		this._onPress();
+		this.onPress = args.onPress ?? (() => null); 
 	}
 }
 
 class XMBMenu extends XMBItem {
-	private readonly _title: string;
-	private readonly _icon: XMBIcon;
+	public readonly title: string;
+	public readonly description: string;
+	public readonly icon: XMBIcon;
 	
 	public readonly children: XMBItem[] = [];
 
 	public constructor(args: XMBMenuConstructorArgs) {
 		super();
-		this._title = args.title;
-		this._icon = args.icon;
+		this.title = args.title;
+		this.description = args.description ?? '';
+		this.icon = args.icon;
 	}
 
 	public add(child: XMBItem): XMBMenu {
 		this.children.push(child);		
 		return this;
-	}
-
-	public get title(): string {
-		return this._title;
-	}
-
-	public get icon(): XMBIcon {
-		return this._icon;
 	}
 
 	public onPress(): void {}
