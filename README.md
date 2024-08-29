@@ -45,9 +45,14 @@ Follow these instructions to set up and run the XMB™ Linux Media Center on you
    npm install
    ```
 
+   Then, install typescript:
+   ```bash
+   npm install -g typescript
+   ```
+
 4. **Build and Run the Project**
 
-   Make sure you have [Python 3](https://www.python.org/) installed. Then execute the following command to build and run the project
+   Make sure you have [Python 3](https://www.python.org/) installed. Then execute the following command to build and run the project:
 
    ```bash
    python3 ./build.py run
@@ -55,7 +60,9 @@ Follow these instructions to set up and run the XMB™ Linux Media Center on you
 
 5. **Open the Application**
 
-   Once the build process completes, you can open the application in your web browser: `http://localhost:8069`
+   Once the build process completes, you can open the application in your web browser: 
+
+   `http://localhost:8069`
 
 ## Features
 
