@@ -17,7 +17,7 @@ def compile():
 		move(BUILD_JS_PATH, temp_js_path)
 
 	print('compiling ts')
-	result = system('npx tsc')
+	result = system('tsc')
 
 	if result == 0:
 		print('build succeeded')
