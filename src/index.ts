@@ -34,4 +34,5 @@ function keyPressed() {
 	else if (keyCode == UP_ARROW) ui.previousOption();
 	else if (keyCode == DOWN_ARROW) ui.nextOption();
 	else if (keyCode == RETURN) ui.pressOption();
+	else if (keyCode == KEY_1) ui.options();
 }
