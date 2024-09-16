@@ -298,4 +298,10 @@ class RenderXMB {
 		currentCategory.category.children[currentCategory.selected].onPress();
 		this.playSound();
 	}
+
+	public options(): void	{
+		// Currently no logic
+		
+		this.playSound();
+	}
 }
