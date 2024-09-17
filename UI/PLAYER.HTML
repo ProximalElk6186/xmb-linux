@@ -2,12 +2,12 @@
 <head>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.js"></script>
     <script>
-    let img;
+let img;
 let angle = 0;
 var isVideo = false;
 
 function preload() {
-  img = loadImage('https://static.thenounproject.com/png/55431-200.png'); // Load the image (first image that popped up when googling "musical note icon")
+  img = loadImage('https://static.thenounproject.com/png/55431-200.png'); // Load the image
 }
 
 function setup() {
@@ -15,32 +15,42 @@ function setup() {
 }
 
 function draw() {
-  if (isVideo == false)  {
-  background(200);
+  if (isVideo == false) {
+    // 3D drawing
+    background(200);
 
-  // Apply rotation around the y-axis
-  rotateY(angle);
-  
-  // Optional: Adjust position so the rectangle is centered
-  translate(-100, -100);
+    // 3D transformations
+    push(); // Save 3D transformation state
+    rotateY(angle); // Rotate around the Y-axis
+    translate(-100, -100); // Translate to center the object
+    texture(img); // Apply texture to the object
 
-  // Apply the texture
-  texture(img);
+    beginShape();
+    vertex(0, 0, 0, 0);                     // Top-left corner
+    vertex(200, 0, 1, 0);                   // Top-right corner (with normalized texture coordinates)
+    vertex(200, 200, 1, 1);                 // Bottom-right corner
+    vertex(0, 200, 0, 1);                   // Bottom-left corner
+    endShape(CLOSE);
 
-  // Create the rectangle using vertices with texture coordinates
-  beginShape();
-  vertex(0, 0, 0, 0);                // Top-left corner
-  vertex(200, 0, img.width, 0);      // Top-right corner
-  vertex(200, 200, img.width, img.height); // Bottom-right corner
-  vertex(0, 200, 0, img.height);     // Bottom-left corner
-  endShape(CLOSE);
+    angle += 0.01; // Increase rotation angle
+    pop(); // Restore 3D transformation state
 
-  // Increase the rotation angle
-  angle += 0.01;
+    // 2D drawing for UI
+    push();
+    resetMatrix(); // Reset matrix to switch back to 2D drawing
+    ortho(); // Ensure we are in orthographic (2D-like) mode
+
+    var uiheight = windowHeight - 50;
+    fill(0, 0, 50); // Red color for UI rectangle
+    noStroke();
+    rect(-width / 2, uiheight - height / 2, windowWidth, 200); // Draw the UI rectangle at the bottom in 2D mode
+    pop();
   }
 }
-function windowResized()  {
-    resizeCanvas(windowWidth, windowHeight);
+
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
 }
+
     </script>
 </head>
