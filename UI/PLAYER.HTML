@@ -1,4 +1,46 @@
 <!DOCTYPE html>
 <head>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.0/p5.js"></script>
+    <script>
+    let img;
+let angle = 0;
+var isVideo = false;
+
+function preload() {
+  img = loadImage('https://static.thenounproject.com/png/55431-200.png'); // Load the image (first image that popped up when googling "musical note icon")
+}
+
+function setup() {
+  createCanvas(windowWidth, windowHeight, WEBGL); // Use WEBGL for 3D rendering
+}
+
+function draw() {
+  if (isVideo == false)  {
+  background(200);
+
+  // Apply rotation around the y-axis
+  rotateY(angle);
+  
+  // Optional: Adjust position so the rectangle is centered
+  translate(-100, -100);
+
+  // Apply the texture
+  texture(img);
+
+  // Create the rectangle using vertices with texture coordinates
+  beginShape();
+  vertex(0, 0, 0, 0);                // Top-left corner
+  vertex(200, 0, img.width, 0);      // Top-right corner
+  vertex(200, 200, img.width, img.height); // Bottom-right corner
+  vertex(0, 200, 0, img.height);     // Bottom-left corner
+  endShape(CLOSE);
+
+  // Increase the rotation angle
+  angle += 0.01;
+  }
+}
+function windowResized()  {
+    resizeCanvas(windowWidth, windowHeight);
+}
+    </script>
 </head>
