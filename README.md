@@ -13,7 +13,7 @@
 ## Project Goals
 
 - **Recreate the Sony PlayStation 3's XMB™ interface** using HTML, CSS, and JavaScript. (50%)
-- **Implement media center functionalities** such as media playback, file management, and streaming support. (0%)
+- **Implement media center functionalities** such as media playback, file management, and streaming support. (15%)
 - **Implement GamePad input support.** (0%)
 - **Develop decent touchscreen support.** (0%)
 
