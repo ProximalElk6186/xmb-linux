@@ -1,0 +1,10 @@
+<Page x:Class="XMBMediaCenter_Player.Presentation.MainPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:local="using:XMBMediaCenter_Player.Presentation"
+      xmlns:uen="using:Uno.Extensions.Navigation.UI"
+      xmlns:utu="using:Uno.Toolkit.UI"
+      NavigationCacheMode="Required"
+      Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+      <MediaPlayerElement />
+</Page>

@@ -1,0 +1,10 @@
+{
+  "background_color": "#ffffff",
+  "description": "XMBMediaCenter_Player",
+  "display": "standalone",
+  "name": "XMBMediaCenter_Player",
+  "short_name": "XMBMediaCenter_Player",
+  "start_url": "/index.html",
+  "theme_color": "#ffffff",
+  "scope": "/"
+}
