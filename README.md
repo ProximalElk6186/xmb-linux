@@ -4,6 +4,9 @@
 
 **Recreation of the XMB™ interface in [JavaScript](https://en.wikipedia.org/wiki/JavaScript), [TypeScript](https://en.wikipedia.org/wiki/TypeScript), and [p5.js](https://p5js.org/).**
 
+**The media player application itself is written in C# & XAML using [Uno Platform](https://platform.uno/) and compiled for Web through [WebAssembly](https://webassembly.org)**.
+<!-- Avaiable at: `http://localhost:5000` -->
+
 ![XMB Demo](https://github.com/ProximalElk6186/xmb-linux/blob/main/demo.gif?raw=true)
 
 ## What is it?
@@ -12,16 +15,16 @@
 
 ## Project Goals
 
-- **Recreate the Sony PlayStation 3's XMB™ interface** using HTML, CSS, and JavaScript. (50%)
+- **Recreate the Sony PlayStation 3's XMB™ interface** using HTML, CSS, and JavaScript.
 
-  ![50%](https://progress-bar.xyz/50)
-- **Implement media center functionalities** such as media playback, file management, and streaming support. (15%)
+  ![65%](https://progress-bar.xyz/65)
+- **Implement media center functionalities** such as media playback, file management, and streaming support.
 
-  ![15%](https://progress-bar.xyz/15)
-- **Implement GamePad input support.** (0%)
+  ![25%](https://progress-bar.xyz/25)
+- **Implement GamePad input support.**
 
   ![0%](https://progress-bar.xyz/0)
-- **Develop decent touchscreen support.** (0%)
+- **Develop decent touchscreen support.**
 
   ![0%](https://progress-bar.xyz/0)
 
