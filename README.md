@@ -68,6 +68,7 @@ Follow these instructions to set up and run the XMB™ Linux Media Center on you
    ```bash
    python3 ./build.py run
    ```
+   If you want to build the media player application, more requirements need to be met. Please look [Media player: prerequesites and building](#media-player-prerequesites-and-building) for details.
 
 5. **Open the Application**
 
@@ -80,6 +81,15 @@ Follow these instructions to set up and run the XMB™ Linux Media Center on you
 - **Media Playback**: Support for various media formats including video, audio, and images.
 - **File Management**: Easy navigation and management of media files.
 
+## Media player: prerequesites and building
+1. **Make sure you have the Platform Uno's development toolkit installed**
+For info take a look at [Platform Uno Quick Start](https://platform.uno/docs/articles/get-started.html?tabs=windows).
+
+2. **Navigate to the Media Player directory**
+```bash
+cd XMBMediaCenter_Player
+```
+3. **Open the project file through your favourite editor**
 ## Copyright Warning
 
 XMB™ (XrossMediaBar™) is a graphical user interface developed by Sony Corporation. 
