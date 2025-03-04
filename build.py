@@ -28,8 +28,9 @@ def compile():
 		print('build failed')
 		return
 
-	move(temp_js_path, BUILD_JS_PATH)
+	#move(temp_js_path, BUILD_JS_PATH)
 	print('build failed restoring js')
+	start_server();
 
 def start_server():
 	system(f'python3 -m http.server 8069 --directory {BUILD_DIR}')
