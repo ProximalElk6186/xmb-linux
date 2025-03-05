@@ -68,7 +68,7 @@ Follow these instructions to set up and run the XMB™ Linux Media Center on you
    ```bash
    python3 ./build.py run
    ```
-   If you want to build the media player application, more requirements need to be met. Please look [Media player: prerequesites and building](#media-player-prerequesites-and-building) for details.
+   **If you want to build the media player application, more requirements need to be met. Please look [Media player: prerequesites and building](#media-player-prerequesites-and-building) for details.**
 
 5. **Open the Application**
 
@@ -82,6 +82,7 @@ Follow these instructions to set up and run the XMB™ Linux Media Center on you
 - **File Management**: Easy navigation and management of media files.
 
 ## Media player: prerequesites and building
+
 1. **Make sure you have the Platform Uno's development toolkit installed**
 For info take a look at [Platform Uno Quick Start](https://platform.uno/docs/articles/get-started.html?tabs=windows).
 
