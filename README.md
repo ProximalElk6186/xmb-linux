@@ -35,7 +35,7 @@ Follow these instructions to set up and run the XMB™ Linux Media Center on you
 1. **Clone the Repository**
 
 Make sure you have [Git](https://git-scm.com) installed. 
-   Open a terminal and run the following command to clone the repository:
+   Then open the terminal and run the following command to clone the repository:
 
    ```bash
    git clone https://github.com/ProximalElk6186/xmb-linux/
