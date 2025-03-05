@@ -15,7 +15,6 @@ furnished to do so, subject to the following conditions:
 2. Any product that uses this Software must display the following credit in a  
    visible location (e.g., an About page, credits screen, or documentation):  
    **"This product uses XMB-Linux by ProximalElk6186 and their GitHub contributors."**  
-In the aforementioned scenario, the remittance of a pecuniary obligation constitutes an indispensable prerequisite for proceeding.
 
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR  
