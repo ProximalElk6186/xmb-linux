@@ -86,13 +86,16 @@ Make sure you have [Git](https://git-scm.com) installed.
 ## Media player: prerequesites and building
 
 1. **Make sure you have the Platform Uno's development toolkit installed**
+
 For info take a look at [Platform Uno Quick Start](https://platform.uno/docs/articles/get-started.html?tabs=windows).
 
 2. **Navigate to the Media Player directory**
+
 ```bash
 cd XMBMediaCenter_Player
 ```
 3. **Open the project file through your favourite editor**
+
 ## Copyright Warning
 
 XMB™ (XrossMediaBar™) is a graphical user interface developed by Sony Corporation. 
