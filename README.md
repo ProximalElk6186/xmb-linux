@@ -96,6 +96,8 @@ cd XMBMediaCenter_Player
 ```
 3. **Open the project file through your favourite editor**
 
+4. **After building it will be available at http://localhost:5000**
+
 ## Copyright Warning
 
 XMB™ (XrossMediaBar™) is a graphical user interface developed by Sony Corporation. 
