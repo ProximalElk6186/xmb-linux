@@ -70,7 +70,7 @@ Make sure you have [Git](https://git-scm.com) installed.
    python3 ./build.py run
    ```
 
-   **If you want to build the media player application, more requirements need to be met. Please look [Media player: prerequesites and building](#media-player-prerequesites-and-building) for details.**
+   **If you want to build the media player application, more requirements need to be met. Please see [Media player: prerequesites and building](#media-player-prerequesites-and-building) for details.**
 
 5. **Open the Application**
 
