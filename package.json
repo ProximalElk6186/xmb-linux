@@ -13,7 +13,7 @@
     "xrossmediabar"
   ],
   "author": "ProximalElk6186,5d-code",
-  "license": "MPL-2.0",
+  "license": "MIT-modified",
   "devDependencies": {
     "@types/p5": "^1.7.6",
     "typescript": "^5.5.4"
